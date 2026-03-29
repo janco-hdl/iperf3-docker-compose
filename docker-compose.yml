@@ -13,7 +13,7 @@ services:
       - public 
       - private 
     dns_search: .
-    command: iperf3 -s -V -d -P 4 -p 5201            
+    command: iperf3 -s -V -d -p 5201            
 
 networks:
   public:
