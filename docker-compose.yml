@@ -7,13 +7,13 @@ services:
       dockerfile: Dockerfile
     container_name: "iperf3"
     ports:
-      - "50001:5001/tcp"
-      - "50001:5001/udp"
+      - "5201:5201/tcp"
+      - "5201:5201/udp"
     networks:
       - public 
       - private 
     dns_search: .
-    command: iperf3 -s -V -d -p 5001            
+    command: iperf3 -s -V -d -p 5201            
 
 networks:
   public:
